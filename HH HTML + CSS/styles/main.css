@@ -1,0 +1,138 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0a3a18a2;
+    margin: 0;
+    padding: 0;
+    border-top: 70px solid black;
+}
+
+.border-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    border-bottom: 2px solid black;
+    padding: 10px;
+    z-index: 999;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.border-container button {
+    background-color: #ffffff;
+    color: #000000; 
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+.menu-container {
+    display: none; /* Initially hide the menu */
+    position: fixed;
+    top: 60px; /* Adjust this according to your design */
+    right: 10px; /* Adjust this according to your design */
+    background-color: #ffffff;
+    padding: 10px;
+    border: 2px solid black;
+}
+
+.menu-container.show {
+    display: block; /* Show the menu when the "show" class is applied */
+}
+
+@font-face {
+    font-family: 'HaloFont';
+    src: url("../fonts/halo_font.ttf") format('truetype');
+}
+
+#main-title {
+    text-align: center;
+    font-family: "HaloFont" !important;
+    font-size: 56px;
+    line-height: 1.4;
+    color: #000000;
+    text-shadow: 2px 2px 4px rgba(160, 86, 3, 0.842);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.welcome-container{
+    margin: 0 25%;
+}
+
+#welcome-message {
+    text-align: center;
+}
+
+.gamertag-box {
+    max-width: 600px; 
+    margin: 0 auto;
+    text-align: center;
+}
+
+.gamertag-box label,
+.gamertag-box input,
+.gamertag-box button {
+    display: inline-block;
+    vertical-align: middle; 
+    margin-right: 10px; 
+}
+
+.weapon-types{
+    color: #000000;
+    margin-left: 10%;
+}
+
+#news-title{
+    color: rgba(241, 235, 235, 0.909);
+    margin-top: -10%;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+
+img {
+    display: inline-block;
+    margin: 0 auto;
+    margin-left: 5%;
+}
+.container {
+    display: flex;
+    justify-content: space-between; 
+    align-items: flex-start; 
+}
+
+.Maps {
+    width: 18%;
+    margin-right: 2.5%; 
+    float: left; 
+    
+}
+
+.Weapons {
+    width: 18%;
+    margin-left: 2.5%; 
+    float: right; 
+}
+
+.news-container {
+    width: 45%;
+    margin: 0 auto;
+    color: #ffffffcc;
+    background-color: rgba(27, 26, 26, 0.884); 
+    padding: 20px;
+    border-radius: 15px;
+}
+
+#map-title, #weapon-title{
+    margin-left: 10%;
+}
